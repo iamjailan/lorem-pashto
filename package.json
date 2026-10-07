@@ -2,7 +2,7 @@
   "name": "pashto-lorem",
   "displayName": "Pashto Lorem",
   "description": "Generate Pashto placeholder paragraphs, sentences, and words in VS Code and Cursor.",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "publisher": "iamjailan",
   "author": {
     "name": "Jailan Samun",
