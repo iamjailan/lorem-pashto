@@ -1,15 +1,27 @@
 {
   "name": "pashto-lorem",
   "displayName": "Pashto Lorem",
-  "description": "Insert Pashto placeholder text in VS Code and Cursor.",
+  "description": "Generate Pashto placeholder paragraphs, sentences, and words in VS Code and Cursor.",
   "version": "0.2.3",
   "publisher": "iamjailan",
   "author": {
     "name": "Jailan Samun",
     "url": "https://github.com/iamjailan"
   },
-  "homepage": "https://github.com/iamjailan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamjailan/lorem-pashto.git"
+  },
+  "homepage": "https://github.com/iamjailan/lorem-pashto",
+  "bugs": {
+    "url": "https://github.com/iamjailan/lorem-pashto/issues"
+  },
   "license": "MIT",
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#123A63",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -77,12 +89,15 @@
     "build": "tsc -p .",
     "check": "tsc -p . --noEmit",
     "test": "npm run build && node dist/test/text.test.js",
-    "package": "npm run build && vsce package --no-dependencies --allow-missing-repository"
+    "vscode:prepublish": "npm run build",
+    "package": "vsce package --no-dependencies"
   },
   "files": [
+    "assets/icon.png",
     "dist/src",
     "snippets",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "devDependencies": {
