@@ -1,0 +1,13 @@
+{
+  "Pashto Lorem paragraph": {
+    "scope": "text.html.pashto",
+    "prefix": "plorem",
+    "body": "د سهار په رڼا کې ښار ورو ورو له خوبه راویښېږي. د کوڅې په سر کې ماشومان ښوونځي ته روان دي. په باغ کې ونې د نرم باد له امله خوځېږي. د کتاب پاڼې د نوو کیسو لپاره ځای لري.",
+    "description": "Insert a paragraph of Pashto placeholder text",
+  },
+  "Pashto Lorem sentence": {
+    "prefix": "sLorem",
+    "body": "د سهار په رڼا کې ښار ورو ورو له خوبه راویښېږي. د کوڅې په سر کې ماشومان ښوونځي ته روان دي. په باغ کې ونې د نرم باد له امله خوځېږي. د کتاب پاڼې د نوو کیسو لپاره ځای لري.",
+    "description": "Insert a sentence of Pashto placeholder text",
+  },
+}

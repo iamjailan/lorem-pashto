@@ -1,0 +1,93 @@
+{
+  "name": "pashto-lorem",
+  "displayName": "Pashto Lorem",
+  "description": "Insert Pashto placeholder text in VS Code and Cursor.",
+  "version": "0.2.2",
+  "publisher": "iamjailan",
+  "author": {
+    "name": "Jailan Samun",
+    "url": "https://github.com/iamjailan"
+  },
+  "homepage": "https://github.com/iamjailan",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "pashto",
+    "پښتو",
+    "lorem",
+    "placeholder",
+    "cursor"
+  ],
+  "activationEvents": [
+    "onCommand:pashtoLorem.insert"
+  ],
+  "main": "./dist/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pashtoLorem.insert",
+        "title": "Insert Pashto Lorem",
+        "category": "Pashto Lorem"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "plaintext",
+        "path": "./snippets/pashto-lorem.code-snippets"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/pashto-lorem.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/pashto-lorem.code-snippets"
+      }
+    ],
+    "configuration": {
+      "title": "Pashto Lorem",
+      "properties": {
+        "pashtoLorem.defaultCount": {
+          "type": "integer",
+          "default": 3,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Suggested amount when inserting Pashto placeholder text."
+        },
+        "pashtoLorem.defaultUnit": {
+          "type": "string",
+          "enum": [
+            "paragraphs",
+            "sentences",
+            "words"
+          ],
+          "default": "paragraphs",
+          "description": "Initially selected unit in the insert picker."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "check": "tsc -p . --noEmit",
+    "test": "npm run build && node dist/test/text.test.js",
+    "package": "npm run build && vsce package --no-dependencies --allow-missing-repository"
+  },
+  "files": [
+    "dist/src",
+    "snippets",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "@types/vscode": "1.74.0",
+    "typescript": "^5.9.3"
+  }
+}
