@@ -2,7 +2,7 @@
   "name": "pashto-lorem",
   "displayName": "Pashto Lorem",
   "description": "Insert Pashto placeholder text in VS Code and Cursor.",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "publisher": "iamjailan",
   "author": {
     "name": "Jailan Samun",

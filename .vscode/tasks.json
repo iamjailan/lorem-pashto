@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "npm run build",
+      "options": {
+        "shell": {
+          "executable": "/usr/bin/zsh",
+          "args": ["-lic"]
+        }
+      },
+      "problemMatcher": "$tsc",
+      "group": "build"
+    }
+  ]
+}

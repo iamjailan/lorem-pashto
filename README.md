@@ -10,7 +10,7 @@ Created by [Jailan Samun](https://github.com/iamjailan).
 2. Run **Pashto Lorem: Insert Pashto Lorem** from the Command Palette.
 3. Choose paragraphs, sentences, or words, then enter an amount from 1 to 100. Selected text is replaced; with multiple cursors, text is inserted at each cursor.
 
-In plain text, Markdown, or HTML, type `plorem` and accept the snippet suggestion to insert one paragraph. The command works in any editable text file.
+In plain text, Markdown, or HTML, type `plorem` (or `pashtolorem`) and accept the **Pashto Lorem paragraph** snippet suggestion. Type `sLorem` for one sentence. The command works in any editable text file. Built-in `lorem` suggestions generate Latin text; choose the Pashto Lorem suggestion by name.
 
 Change `pashtoLorem.defaultCount` and `pashtoLorem.defaultUnit` in Settings to adjust the suggested amount and unit.
 
